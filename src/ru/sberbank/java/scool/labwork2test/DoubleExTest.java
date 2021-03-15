@@ -51,6 +51,7 @@ public class DoubleExTest {
         Assert.assertEquals(doubleEx.divide(5.55).getValue(), 1.8018018018018018, 0.0);
         Assert.assertEquals(doubleEx.divide(-5.55).getValue(), -1.8018018018018018, 0.0);
         Assert.assertEquals(doubleEx.divide(555).getValue(), 0.018018018018018018, 0.0);
+        Assert.assertEquals(doubleEx.divide(0.0).getValue(), Double.POSITIVE_INFINITY, 0.0);
         exception.expect(ArithmeticException.class);
         doubleEx.divide(0);
     }
