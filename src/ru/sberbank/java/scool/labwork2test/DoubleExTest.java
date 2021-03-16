@@ -13,7 +13,7 @@ public class DoubleExTest {
 
     @org.junit.Before
     public void setUp() {
-        doubleEx = new DoubleEx(10);
+        doubleEx = new DoubleEx(10d);
     }
 
     @org.junit.Test

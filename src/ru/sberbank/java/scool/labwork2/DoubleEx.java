@@ -21,8 +21,8 @@ public class DoubleEx {
         return dp.test(value) ? this : new DoubleEx(df.applyAsDouble(value));
     }
 
-    public DoubleEx(Number value) {
-        this.value = value == null ? 0.0 : value.doubleValue();
+    public DoubleEx(double value) {
+        this.value = value;
     }
 
     public DoubleEx add(Number val) {
