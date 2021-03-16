@@ -22,7 +22,7 @@ public class DoubleEx {
     }
 
     public DoubleEx(Number value) {
-        this.value = value.doubleValue();
+        this.value = value == null ? 0.0 : value.doubleValue();
     }
 
     public DoubleEx add(Number val) {

@@ -13,5 +13,6 @@ public class Main {
         out.printf("10 %% 3 = %f\n", val.mod(3).getValue());
         out.printf("10 ^ 5 = %f\n", val.pow(5).getValue());
         out.printf("max(10, 11) = %f\n", val.max(11).getValue());
+        DoubleEx val2 = new DoubleEx(null);
     }
 }
